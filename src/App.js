@@ -1,21 +1,28 @@
 import './App.css';
 import React, { useState, useEffect } from "react";
-import config from './config';
 import vector1 from "./assets/vector1.svg";
 import vector2 from "./assets/vector2.svg";
 import vector3 from "./assets/vector3.svg";
 import Select from 'react-select';
 import MaterialIcon from 'material-icons-react';
+import axios from 'axios';
 
 function App() {
     const [currentCityData, setCurrentCityData] = useState({});
 
-    const fetchData = (cityValue) => {
-        fetch(`https://api.weatherbit.io/v2.0/current?city=${cityValue}&key=${config.api.key}`)
-            .then((response) => response.json())
-            .then((json) => setCurrentCityData(json.data[0]))
-            .catch((error) => console.error(error));
-    };
+    async function fetchData(cityValue) {
+        try {
+            const response = await axios.get('http://localhost:5000/get-weather', {
+                params: {
+                    cityValue: cityValue
+                }
+            });
+            setCurrentCityData(response?.data?.data[0]);
+        }
+        catch (e) {
+            console.log(e);
+        }
+    }
 
     const handleCitySelection = (city) => {
         fetchData(city.value);
