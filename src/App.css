@@ -1,38 +1,142 @@
 .App {
   text-align: center;
+  background: linear-gradient(to bottom, rgba(0,56,255,0.2), rgba(249,111, 235,0.2));
+  height: 100vh;
+  font-family: 'Manrope', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.vector1 {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.vector2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.vector3 {
+  position: absolute;
+  right: 170px;
+  bottom: 60px;
 }
 
-.App-link {
-  color: #61dafb;
+.copyright {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    color: #FFFFFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
+
+.tab {
+    background-color: #FFFFFF;
+    border-radius: 30px 30px 0 0;
+    width: 510px;
+    height: 115px;
+    margin-left: 32px;
+    position: relative;
+}
+
+.locationIcon {
+    position: absolute;
+    left: 30px;
+    top: 42px;
+}
+
+.weatherCard {
+  width: 1010px;
+  height: 410px;
+  background: linear-gradient(to bottom, rgba(249,111, 235,0.4), rgba(0,56,255,0.4));
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.circle {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    background-color: #FFFFFF;
+    width: 180px;
+    height: 180px;
+    border-radius: 180px;
+    position: absolute;
+    left: 93px;
+    top: 70px;
+}
+
+.weatherIcon {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    width: 140px;
+    height: 140px;
+}
+
+.weather {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 320px;
+    top: 65px;
+}
+
+.currentWeather {
+    font-size: 96px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.currentWeather span {
+    font-size: 48px;
+}
+
+.apparentWeather {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-left: 30px;
+    margin-top: 75px;
+}
+
+.apparentWeather span {
+    font-size: 18px;
+}
+
+.weatherDescription {
+    font-weight: bold;
+    font-size: 48px;
+    color: #FFFFFF;
+    top: 190px;
+    left: 320px;
+    position: absolute;
+}
+
+.ruler {
+    width: 900px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 56px;
+    bottom: 100px;
+}
+
+
+
+
+
+
+
