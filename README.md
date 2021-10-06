@@ -1,3 +1,5 @@
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/43654021/136271347-8f69d7e8-3012-40b6-a2d8-6c9df5af7431.gif)
+
 <img width="1440" alt="Screen Shot 2021-10-06 at 3 29 18 PM" src="https://user-images.githubusercontent.com/43654021/136270472-77b0b1e5-4a77-45d6-bdfa-cce47323a5b7.png">
 
 ## Backend Repo
