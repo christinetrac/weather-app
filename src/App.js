@@ -33,7 +33,6 @@ function App() {
         { value: 'phoenix', label: 'Phoenix' },
         { value: 'vancouver&country=canada', label: 'Vancouver' },
         { value: 'seattle', label: 'Seattle' },
-        { value: 'boston', label: 'Boston' },
         { value: 'bangkok', label: 'Bangkok' },
         { value: 'paris', label: 'Paris' },
         { value: 'tokyo', label: 'Tokyo' },
