@@ -86,7 +86,6 @@ function App() {
       <img src={vector1} alt="" className="vector1"/>
       <img src={vector2} alt="" className="vector2"/>
       <img src={vector3} alt="" className="vector3"/>
-      <div className="copyright">Developed and designed by Christine Trac for On Deck</div>
       <div className="container">
           <div className="tab">
               <div className="locationIcon">
